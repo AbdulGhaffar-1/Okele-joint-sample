@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Okele-Joint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Experience the best Nigerian cuisine at Okele-Joint. Fresh ingredients, authentic flavors, and fast delivery." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+  <!-- NAVBAR (LocalEats style with brand as logo) -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <img src="./img/photo_2026-03-07_11-09-52.jpg" alt="Okele-Joint" class="logo-img">
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#featured" class="nav-link">Menu</a>
+        <a href="#find-us" class="nav-link">Find Us</a>
+        <a href="#delivery" class="nav-link">Delivery</a>
+        <a href="#catering" class="nav-link">Catering</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-ghost" onclick="scrollToSection('catering')">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          Catering
+        </button>
+        <button class="btn btn-primary" onclick="scrollToSection('featured')">
+          Order Online
+        </button>
+      </div>
+    </div>
+
+    <!-- TOP SUPPORT BAR (LocalEats style) -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <p class="support-text">
+        Need instant support?
+        <span class="highlight-text">Click here to chat with us on WhatsApp.</span>
+      </p>
+      <a href="https://wa.me/2347065501228" class="top-bar-link">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (ForkInNigeria style) -->
+    <section id="hero" class="hero">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Most Popular Restaurant with 
+              <span class="text-gradient">Fresh Food</span> & 
+              <span class="text-gradient">New Taste.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Experience authentic Nigerian cuisine prepared with the finest ingredients, 
+              served with passion, and delivered with care. From our kitchen to your table.
+            </p>
+
+            <button class="btn btn-primary btn-large" onclick="scrollToSection('featured')">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                Order Online
+              </button>
+              <button class="btn btn-outline btn-large" onclick="scrollToSection('catering')">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+                Catering Service
+              </button>
+               <p class="hero-note">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+
+                    Or call us: <strong>+234 800 000 0000</strong>
+                </p>
+             
+              </div>
+
+              
+            </div>
+
+            <div class="hero-cta">
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <img src="./img/photo_2026-03-07_11-09-56.jpg" alt="image">
+                        
+                    </div>
+                
+                </div>
+            </div>
+           
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED FAVORITES (ForkInNigeria style with slider) -->
+    <section id="featured" class="section featured-section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Our Menu</span>
+          <h2>Featured Favorites</h2>
+          <p>
+            Discover our most-loved dishes, prepared fresh daily with authentic recipes 
+            and premium ingredients.
+          </p>
+        </header>
+
+        <div class="featured-wrapper">
+          <button class="slider-btn slider-prev" id="sliderPrev">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+
+          <div class="featured-slider" id="featuredSlider">
+            <div class="featured-track" id="featuredTrack">
+              <article class="dish-card">
+                <div class="dish-image">
+                  <img src="img/photo_2026-03-07_11-09-56.jpg" alt="Image" />
+                  <span class="dish-badge">Best Seller</span>
+                </div>
+                <div class="dish-content">
+                  <h3>Pounded Yam and Egusi</h3>
+                  <p>Fresh pounded yam with rich egusi soup, assorted meat & fish</p>
+                  <div class="dish-meta">
+                    
+                    <span class="orders">🔥 500+ orders</span>
+                  </div>
+                  <div class="dish-footer">
+                    <span class="price">₦4,500</span>
+                    <button class="btn btn-add">Add to Cart</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-image">
+                  <img src="img/Wheat.png" alt="Pounded Yam" />
+                  <span class="dish-badge">Popular</span>
+                </div>
+                <div class="dish-content">
+                  <h3>Amala and Abula</h3>
+                  <p>soft amala and abula soup, assorted meat & fish</p>
+                  <div class="dish-meta">
+                   
+                    <span class="orders">🔥 450+ orders</span>
+                  </div>
+                  <div class="dish-footer">
+                    <span class="price">₦5,000</span>
+                    <button class="btn btn-add">Add to Cart</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-image">
+                  <img src="img/Semo.png" alt="Fried Rice" />
+                </div>
+                <div class="dish-content">
+                  <h3>Semo and Egusi</h3>
+                  <p>Hot semo with egusi soup, assorted meat and ponmo & </p>
+                  <div class="dish-meta">
+                    
+                    <span class="orders">🔥 380+ orders</span>
+                  </div>
+                  <div class="dish-footer">
+                    <span class="price">₦4,000</span>
+                    <button class="btn btn-add">Add to Cart</button>
+                  </div>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-image">
+                  <img src="img/photo_2026-03-07_11-09-55.jpg" alt="Amala" />
+                </div>
+                <div class="dish-content">
+                  <h3>Wheat with Eforiro</h3>
+                  <p>Soft wheat with eforiro soup, & assorted meat</p>
+                  <div class="dish-meta">
+                   
+                    <span class="orders">🔥 320+ orders</span>
+                  </div>
+                  <div class="dish-footer">
+                    <span class="price">₦3,500</span>
+                    <button class="btn btn-add">Add to Cart</button>
+                  </div>
+                </div>
+              </article>
+
+              
+
+              <!-- <article class="dish-card">
+                <div class="dish-image">
+                  <img src="images/pepper-soup.jpg" alt="Pepper Soup" />
+                </div>
+                <div class="dish-content">
+                  <h3>Goat Meat Pepper Soup</h3>
+                  <p>Hot & spicy traditional pepper soup with tender goat meat</p>
+                  <div class="dish-meta">
+                    <span class="prep-time">🕐 30 mins</span>
+                    <span class="orders">🔥 250+ orders</span>
+                  </div>
+                  <div class="dish-footer">
+                    <span class="price">₦4,500</span>
+                    <button class="btn btn-add">Add to Cart</button>
+                  </div>
+                </div>
+              </article> -->
+            </div>
+          </div>
+
+          <button class="slider-btn slider-next" id="sliderNext">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHERE TO FIND US (ForkInNigeria style) -->
+    <section id="find-us" class="section find-section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Visit Us</span>
+          <h2>Where to Find Us</h2>
+        </header>
+
+        <div class="find-grid">
+          <div class="location-info">
+            <div class="location-card">
+              <h3>Okele-Joint Restaurant</h3>
+              <div class="location-details">
+                <div class="detail-item">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  <span> Kwara State University Malete, Kwara </span>
+                </div>
+                <div class="detail-item">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                  </svg>
+                  <span>Open Daily: 11:00 AM - 10:00 PM</span>
+                </div>
+                <div class="detail-item">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                  <span>+234 8142663601</span>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block">Get Directions</button>
+            </div>
+          </div>
+          <div class="restaurant-image">
+            <img src="img/photo_2026-03-07_11-09-52.jpg" alt="Okele-Joint Restaurant" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERY PARTNERS (ForkInNigeria style) -->
+    <section id="delivery" class="section delivery-section">
+      <div class="container">
+        <div class="delivery-content">
+          <div class="delivery-text">
+            <h2>We Bring To Your Doorstep.</h2>
+            <p>
+              Order from your favorite delivery platforms or directly from us. 
+              Fast, reliable delivery across Malete, Kwara.
+            </p>
+          </div>
+          <div class="delivery-partners">
+    
+            <div class="partner-card">
+              <img src="img/Glovo logo with location pin.png" alt="Glovo" />
+            </div>
+            
+            <div class="partner-card">
+              <img src="img/Chowdeck--1.png" alt="Chowdeck" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATERING SERVICE (ForkInNigeria style) -->
+    <section id="catering" class="section catering-section">
+      <div class="container">
+        <div class="catering-grid">
+          <div class="catering-image">
+            <img src="img/image_77cd86a.png" alt="Catering Services" />
+            <div class="image-overlay">
+              <span class="overlay-text">Premium Catering</span>
+            </div>
+          </div>
+          <div class="catering-content">
+            <span class="section-label">Catering Services</span>
+            <h2>Let Us Cater Your Next Event</h2>
+            <p>
+              From corporate events to weddings, birthdays, and special occasions, 
+              we bring the authentic taste of Nigerian cuisine to your celebration.
+            </p>
+            <ul class="catering-features">
+              <li>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+                <span>Corporate Events & Office Parties</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+                <span>Weddings & Traditional Ceremonies</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+                <span>Birthday Parties & Anniversaries</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+                <span>Customized Menu Options</span>
+              </li>
+              <li>
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                </svg>
+                <span>Professional Service Staff</span>
+              </li>
+            </ul>
+            <div class="catering-cta">
+              <button class="btn btn-primary">Request Quote</button>
+              <p class="cta-note">Or call: <strong>+234 8142663601</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (ForkInNigeria style) -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          
+          <p class="footer-desc">
+            Your favorite Nigerian restaurant serving authentic dishes with 
+            fresh ingredients and unforgettable taste since 2023.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#featured">Our Menu</a></li>
+            <li><a href="#delivery">Order Online</a></li>
+            <li><a href="#catering">Catering Services</a></li>
+            <li><a href="#find-us">Location</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Okele-Joint. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING WIDGET (LocalEats style) -->
+  <div class="whatsapp-widget">
+    <a href="https://wa.me/2348000000000" target="_blank" class="whatsapp-button">
+      <svg width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      <span class="whatsapp-text">Chat with us</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
