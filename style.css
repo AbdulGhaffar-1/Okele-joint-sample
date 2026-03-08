@@ -388,7 +388,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .hero-grid {
-  display: grid;
+  display: flow;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
@@ -1060,7 +1060,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 /* Mobile Devices */
 @media (max-width: 768px) {
   .container {
-    padding: 0 16px;
+    padding: 0 6px;
   }
 
   .section {
@@ -1075,7 +1075,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
   .top-bar-inner {
     flex-direction: row;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   /* Navbar */
@@ -1136,11 +1136,11 @@ body.nav-open .nav-toggle span:nth-child(3) {
   }
 
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: black;
     font-family: sans-serif;
     font-weight: 600;
